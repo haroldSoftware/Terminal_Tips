@@ -30,7 +30,7 @@ $ sed '5 s/replaced/replacedBy/p' [INPUTFILE]
 -----
 8) Substitute a string within a range
 (in this case from 1 to 5) \
-$ sed '1,5 s/replaced/replacedBy/' [INPUTFILE]
+$ sed '1,5 s/replaced/replacedBy/' [INPUTFILE] \
 (in the following case from 2 to the end, $ is the end) \
 $ sed '2,$ s/replaced/replacedBy/' [INPUTFILE]
 -----
@@ -50,5 +50,5 @@ $ sed 'x,yd' [INPUTFILE]
 $ sed '5,$d' [INPUTFILE]
 -----
 13) Delete a matching pattern
-(in this case the pattern is abc) \ 
+(in this case the pattern is abc) \
 $ sed '/abc/d' [INPUTFILE]
