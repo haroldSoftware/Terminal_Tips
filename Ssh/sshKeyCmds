@@ -1,0 +1,12 @@
+#login as root
+sudo -i
+
+#remove ssh keys
+rm -fr /home/username/.ssh
+
+#use ssh
+ssh-keygen -R hostname 
+
+#copy ssh key to server
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@yourIPaddress
+
